@@ -107,6 +107,7 @@ ul {
   text-align: center;
   padding: 0px;
   position: absolute;
+  top: 10vh;
   left: 5%;
   line-height: 50px;
 }
@@ -125,6 +126,7 @@ i {
     position: relative;
     margin: 40px auto -40px auto;
     left: 0%;
+    top: 0%;
   }
 
   i {
@@ -207,6 +209,10 @@ i {
 }
 
 @media (max-width: 860px) {
+  nav {
+    grid-template-columns: 1fr 1fr;
+  }
+
   #drh {
     font-size: 30px;
     padding-left: 30px;
@@ -222,6 +228,11 @@ i {
     display: none;
   }
 
+  .container {
+    width: 70%;
+    margin: 0 auto;
+  }
+
   #tile1 {
     grid-template-columns: 1fr;
     position: relative;
@@ -229,6 +240,8 @@ i {
 
   #profile {
     grid-row-start: 2;
+    width: 90%;
+    margin: 0 auto;
   }
 
   #desc {
@@ -257,6 +270,13 @@ i {
   p {
     font-size: 14px;
     line-height: 16px;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 670px) {
+  .container {
+    width: 90%;
   }
 }
 
@@ -288,5 +308,15 @@ i {
     grid-row-start: 2;
     position: absolute;
     top: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 14px;
   }
 }
